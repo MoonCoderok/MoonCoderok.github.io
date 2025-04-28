@@ -1,0 +1,99 @@
+/* Подключаем Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* Общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Контейнер */
+.container {
+    background: white;
+    max-width: 750px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Фото */
+.photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ff6f61;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 22px;
+    color: #ff6f61;
+    border-bottom: 3px solid #ff6f61;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Разделы */
+.section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff5f3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.section:hover {
+    background: #ffedea;
+    transform: scale(1.02);
+}
+
+/* Текст */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Контакты */
+.section p strong {
+    color: #ff5733;
+}
+
+/* Ссылки */
+a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff3b2f;
+    text-decoration: underline;
+}
