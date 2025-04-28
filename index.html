@@ -3,48 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/adaptive.css.css">
-    <link rel="stylesheet" href="styles/view.css.css">
-    <title>Дина Магомедова</title>
+    <title>Имя Фамилия - Воспитатель детского сада</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        /* Шапка */
+        header {
+            background: #6C9BCF;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Основной контент */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Секции */
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #6C9BCF;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Списки */
+        ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "▹";
+            color: #6C9BCF;
+            margin-right: 0.5rem;
+        }
+
+        /* Контакты */
+        .contacts {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Кнопка */
+        .download-btn {
+            display: inline-block;
+            background: #6C9BCF;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .contacts {
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+    </style>
+    <!-- Подключение шрифта -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Фото и имя -->
-        <div class="photo">
-            <img src="photo.jpg" alt="Фото воспитателя">
-        </div>
-        <h1>Имя Фамилия</h1>
-        <p class="job-title">Воспитатель детского сада</p>
+    <header>
+        <h1 class="header-title">Имя Фамилия</h1>
+        <p>Воспитатель детского сада</p>
+    </header>
 
-        <!-- Блок "О себе" -->
-        <div class="section">
+    <main class="container">
+        <section>
             <h2>О себе</h2>
             <p>Опытный воспитатель с любовью к детям, стремлюсь создать теплую и безопасную атмосферу для развития и обучения.</p>
-        </div>
+        </section>
 
-        <!-- Образование -->
-        <div class="section">
+        <section>
             <h2>Образование</h2>
-            <p><i class="fas fa-graduation-cap"></i> Название учебного заведения, специальность, год окончания.</p>
-        </div>
+            <ul>
+                <li>Название учебного заведения, специальность, год окончания</li>
+            </ul>
+        </section>
 
-        <!-- Опыт работы -->
-        <div class="section">
+        <section>
             <h2>Опыт работы</h2>
-            <p><i class="fas fa-briefcase"></i> Место работы, должность, основные обязанности.</p>
-        </div>
+            <ul>
+                <li>Место работы, должность, основные обязанности</li>
+            </ul>
+        </section>
 
-        <!-- Контакты -->
-        <div class="section contacts">
+        <section>
             <h2>Контакты</h2>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
-            <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-        </div>
-
-        <!-- Кнопка Скачать Резюме -->
-        <div class="download">
-            <a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Скачать резюме</a>
-        </div>
-    </div>
+            <div class="contacts">
+                <div class="contact-item">
+                    ✉️ Email: example@mail.com
+                </div>
+                <div class="contact-item">
+                    📞 Телефон: +7 (999) 123-45-67
+                </div>
+            </div>
+            <a href="#" class="download-btn" style="margin-top: 1.5rem;">Скачать резюме</a>
+        </section>
+    </main>
 </body>
 </html>
