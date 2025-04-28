@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/adaptive.css">
+    <title>Страничка воспитателя</title>
     <link rel="stylesheet" href="styles/view.css">
-    <title>Дина Магомедова</title>
+    <link rel="stylesheet" href="styles/adaptive.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Фото и имя -->
-        <div class="photo">
-            <img src="photo.jpg" alt="Фото воспитателя">
+    <header class="header">
+        <div class="header-content">
+            <img src="images/profile.jpg" 
+                 alt="Иванова Мария Петровна" 
+                 class="teacher-photo">
+            <div>
+                <h1>Детский сад № 253 Звёздочка</h1>
+                <p>Воспитатель: Магомедова Дина Якубовна</p>
+            </div>
         </div>
-        <h1>Имя Фамилия</h1>
-        <p class="job-title">Воспитатель детского сада</p>
+    </header>
 
-        <!-- Блок "О себе" -->
-        <div class="section">
-            <h2>О себе</h2>
-            <p>Опытный воспитатель с любовью к детям, стремлюсь создать теплую и безопасную атмосферу для развития и обучения.</p>
-        </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#activities">Активности</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
 
-        <!-- Образование -->
-        <div class="section">
-            <h2>Образование</h2>
-            <p><i class="fas fa-graduation-cap"></i> Название учебного заведения, специальность, год окончания.</p>
-        </div>
+    <section id="activities" class="section">
+        <h2>Последние активности</h2>
+        
+        <div class="activities-container">
+            <div class="card">
+                <h3>🎨 Рисование на асфальте</h3>
+                <p class="date">15 мая 2024</p>
+                <p>Сегодня мы создавали красочные рисунки мелом на площадке!</p>
+            </div>
 
-        <!-- Опыт работы -->
-        <div class="section">
-            <h2>Опыт работы</h2>
-            <p><i class="fas fa-briefcase"></i> Место работы, должность, основные обязанности.</p>
-        </div>
+            <div class="card">
+                <h3>🌱 Посадка цветов</h3>
+                <p class="date">14 мая 2024</p>
+                <p>Посадили первые цветы на нашей клумбе, учились ухаживать за растениями</p>
+            </div>
 
-        <!-- Контакты -->
-        <div class="section contacts">
-            <h2>Контакты</h2>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
-            <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+            <div class="card">
+                <h3>📖 Литературная неделя</h3>
+                <p class="date">10-14 мая 2024</p>
+                <p>Читали сказки Корнея Чуковского, инсценировали "Муху-Цокотуху"</p>
+            </div>
         </div>
+    </section>
 
-        <!-- Кнопка Скачать Резюме -->
-        <div class="download">
-            <a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Скачать резюме</a>
+    <section id="gallery" class="section">
+        <h2>Фотогалерея</h2>
+        <div class="gallery">
+            <div class="photo"><img src="https://via.placeholder.com/300x200?text=Фото+1" alt="Мероприятие"></div>
+            <div class="photo"><img src="https://via.placeholder.com/300x200?text=Фото+2" alt="Занятие"></div>
+            <div class="photo"><img src="https://via.placeholder.com/300x200?text=Фото+3" alt="Прогулка"></div>
+            <div class="photo"><img src="https://via.placeholder.com/300x200?text=Фото+4" alt="Творчество"></div>
         </div>
-    </div>
+    </section>
+
+    <footer id="contacts" class="footer">
+        <h3>Контакты</h3>
+        <p>Детский сад №123 "Солнышко"</p>
+        <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>Email: solnyshko123@mail.ru</p>
+        <p>Адрес: г. Москва, ул. Детская, д. 5</p>
+    </footer>
 </body>
 </html>
